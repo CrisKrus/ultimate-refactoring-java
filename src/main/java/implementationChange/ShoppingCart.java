@@ -6,8 +6,8 @@ import java.util.List;
 public class ShoppingCart {
     private List<Integer> prices = new ArrayList<>();
 
-    public void add(int price) {
-        this.prices.add(price);
+    public void add(Price price) {
+        this.prices.add(price.getPrice());
     }
 
     public int calculateTotalPrice() {
