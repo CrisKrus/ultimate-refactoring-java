@@ -17,4 +17,10 @@ public class GodShould {
         God god = new God();
         assertThat(god.substract(2,2)).isEqualTo(0);
     }
+
+    @Test
+    public void says_hello() throws Exception {
+        God god = new God();
+        assertThat(god.sayHello()).isEqualTo("Hello");
+    }
 }

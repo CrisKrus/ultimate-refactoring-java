@@ -10,8 +10,8 @@ public class God {
         return a - b;
     }
 
-    public void sayHello(){
-        System.out.println("Hello!");
+    public String sayHello(){
+        return "Hello";
     }
 
     public void sayBye(){
