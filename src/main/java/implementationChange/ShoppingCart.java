@@ -13,7 +13,11 @@ public class ShoppingCart {
     }
 
     public int calculateTotalPrice() {
-        return price;
+        Integer total = 0;
+        for (Integer price : this.prices) {
+            total += price;
+        }
+        return total;
     }
 
     public boolean hasDiscount() {

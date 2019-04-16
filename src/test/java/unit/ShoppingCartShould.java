@@ -17,8 +17,9 @@ public class ShoppingCartShould {
     public void calculate_total_price() throws Exception {
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.add(10);
+        shoppingCart.add(10);
 
-        Assert.assertEquals(10, shoppingCart.calculateTotalPrice());
+        Assert.assertEquals(20, shoppingCart.calculateTotalPrice());
     }
 
     @Test
