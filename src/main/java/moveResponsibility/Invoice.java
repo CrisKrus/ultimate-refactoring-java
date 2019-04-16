@@ -3,8 +3,8 @@ package moveResponsibility;
 import java.math.BigDecimal;
 
 public class Invoice {
-    public BigDecimal grossAmount;
-    public BigDecimal taxPercentage;
+    private BigDecimal grossAmount;
+    private BigDecimal taxPercentage;
     public int numberOfItems;
 
     public Invoice(String amount, String tax){

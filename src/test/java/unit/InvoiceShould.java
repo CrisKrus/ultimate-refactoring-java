@@ -1,7 +1,6 @@
 package unit;
 
 import moveResponsibility.Invoice;
-import moveResponsibility.InvoiceService;
 import org.junit.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
