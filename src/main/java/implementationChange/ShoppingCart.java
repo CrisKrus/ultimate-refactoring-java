@@ -7,8 +7,8 @@ public class ShoppingCart {
         this.price = price;
     }
 
-    public int calculateTotalPrice() {
-        return price;
+    public Price calculateTotalPrice() {
+        return new Price(price);
     }
 
     public boolean hasDiscount() {
