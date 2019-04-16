@@ -7,18 +7,17 @@ public class Invoice {
     public BigDecimal taxPercentage;
     public int numberOfItems;
 
-
-    public Invoice() {
-
-    }
-
     public Invoice(String amount, String tax){
         grossAmount = new BigDecimal(amount);
         taxPercentage = new BigDecimal(tax);
     }
 
-
     public String calculateNetAmount(){
-        return "";
+        return grossAmount.subtract(
+                grossAmount.multiply(
+                        taxPercentage.divide(
+                                new BigDecimal("100")
+                        )))
+                .toString();
     }
 }
