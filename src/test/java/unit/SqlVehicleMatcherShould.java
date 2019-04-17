@@ -1,6 +1,6 @@
 package unit;
 
-import replaceType.OldVehicleQuery;
+import replaceType.NewVehicleQuery;
 import replaceType.SqlVehicleMatcher;
 import org.junit.Test;
 
@@ -10,8 +10,8 @@ public class SqlVehicleMatcherShould {
     @Test
     public void find_vehicles() throws Exception {
         SqlVehicleMatcher matcher = new SqlVehicleMatcher();
-        OldVehicleQuery query = new OldVehicleQuery();
-        query.brandDescription = "VW Polo";
+        NewVehicleQuery query = new NewVehicleQuery("", "");
+        query.setBrandDescription("VW Polo");
 
         assertThat(matcher.countVehicles(query)).isEqualTo(1);
     }
